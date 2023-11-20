@@ -125,22 +125,18 @@ class SttPageState extends State<SttPage> {
                     .toList(),
               ),
               Expanded(
-                child: Stack(
-                  children: [
-                    Container(
-                      color: Colors.amberAccent,
-                      child: Padding(
-                        padding: const EdgeInsets.all(16),
-                        child: Center(
-                          child: Text(
-                            speechProvider.lastResult?.recognizedWords ?? '',
-                            textAlign: TextAlign.center,
-                            style: const TextStyle(fontSize: 24),
-                          ),
-                        ),
+                child: Container(
+                  color: Colors.amberAccent,
+                  child: Padding(
+                    padding: const EdgeInsets.all(16),
+                    child: Center(
+                      child: Text(
+                        speechProvider.lastResult?.recognizedWords ?? '',
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(fontSize: 24),
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
               Container(
